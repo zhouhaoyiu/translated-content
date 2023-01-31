@@ -76,11 +76,11 @@ slug: Web/HTML/Element/textarea
 
 ### 基线不一致
 
-The HTML specification doesn't define where the baseline of a `<textarea>` is, so different browsers set it to different positions. For Gecko, the `<textarea>` baseline is set on the baseline of the first line of the textarea's first line, on another browser it may be set on the bottom of the `<textarea>` box. Don't use {{cssxref("vertical-align")}}`: baseline` on it; the behavior is unpredictable.
+HTML规范没有定义 `<textarea>`的基线位置，因此不同的浏览器将其设置到不同的位置。对于Gecko， `<textarea>`基线设置在文本区域第一行的基线上，在另一个浏览器上，它可以被设置在<textarea>框的底部。请不要在上面使用{{cssxref("vertical-align")}}`: baseline`；因为它会导致不可预测的行为。
 
 ### 控制文本区是否可调整大小
 
-In most browsers, `<textarea>`s are resizable — you'll notice the drag handle in the right hand corner, which can be used to alter the size of the element on the page. This is controlled by the {{ cssxref("resize") }} CSS property — resizing is enabled by default, but you can explicitly disable it using a `resize` value of `none`:
+在大多数的浏览器中, `<textarea>`s 的大小是可调整的 — 你会注意到右侧角落的拖动手柄, 它可以用来改变此元素在页面上的大小。 它由css属性{{ cssxref("resize") }}控制，默认情况下调整大小是启用的,  但你可以将`resize`的值调整为`none`来将它显式地禁用:
 
 ```css
 textarea {
@@ -114,7 +114,7 @@ textarea:valid {
 
 ### 基本示例
 
-The following example show a very simple textarea, with a set numbers of rows and columns and some default content.
+下面的示例显示了一个设置了行和列数和一些默认内容的非常简单的文本区域。
 
 ```html
 <textarea name="textarea"
@@ -125,7 +125,7 @@ The following example show a very simple textarea, with a set numbers of rows an
 
 ### 最小和最大长度
 
-This example has a minimum and maximum number of characters — of 10 and 20 respectively. Try it and see.
+此示例的最小字符数和最大字符数分别为10和20。试试看。
 
 ```html
 <textarea name="textarea"
@@ -139,7 +139,7 @@ Note that `minlength` doesn't stop the user from removing characters so that the
 
 ### 占位符
 
-This example has a placeholder set. Notice how it disappears when you start typing into the box.
+此示例设置了占位符。请注意，当您开始在框中键入时，它是如何消失的。
 
 ```html
 <textarea name="textarea"
